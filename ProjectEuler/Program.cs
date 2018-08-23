@@ -9,16 +9,6 @@ namespace Euler
     {
         static void Main(string[] args)
         {
-            // Euler Problem 1
-            //int maxNumber = 1000;
-            //int[] factors = new int[] { 3, 5 };
-            //List<int> multiples = EulerHelperFunctions.GetMultiples(maxNumber, factors);
-            //Console.WriteLine(multiples.Sum());
-
-            // Euler Problem 2 
-            //long maxValue = 4000000;
-            //List<long> fibonacci = EulerHelperFunctions.CreateFibonacciSequence(maxValue);
-            //Console.WriteLine(EulerHelperFunctions.SumEvenNumbers(fibonacci));
 
             // Euler Problem 3
             //long number = 600851475143;

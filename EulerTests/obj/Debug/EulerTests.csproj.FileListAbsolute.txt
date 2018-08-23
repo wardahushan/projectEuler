@@ -1,0 +1,17 @@
+C:\Users\wushan\Desktop\projectEuler.net\euler\EulerTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\wushan\Desktop\projectEuler.net\euler\EulerTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\wushan\Desktop\projectEuler.net\euler\EulerTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\wushan\Desktop\projectEuler.net\euler\EulerTests\bin\Debug\EulerTests.dll
+C:\Users\wushan\Desktop\projectEuler.net\euler\EulerTests\bin\Debug\EulerTests.pdb
+C:\Users\wushan\Desktop\projectEuler.net\euler\EulerTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\wushan\Desktop\projectEuler.net\euler\EulerTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\wushan\Desktop\projectEuler.net\euler\EulerTests\bin\Debug\ProjectEuler.exe
+C:\Users\wushan\Desktop\projectEuler.net\euler\EulerTests\bin\Debug\ProjectEuler.pdb
+C:\Users\wushan\Desktop\projectEuler.net\euler\EulerTests\bin\Debug\ProjectEuler.exe.config
+C:\Users\wushan\Desktop\projectEuler.net\euler\EulerTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\wushan\Desktop\projectEuler.net\euler\EulerTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\wushan\Desktop\projectEuler.net\euler\EulerTests\obj\Debug\EulerTests.csprojAssemblyReference.cache
+C:\Users\wushan\Desktop\projectEuler.net\euler\EulerTests\obj\Debug\EulerTests.csproj.CoreCompileInputs.cache
+C:\Users\wushan\Desktop\projectEuler.net\euler\EulerTests\obj\Debug\EulerTests.csproj.CopyComplete
+C:\Users\wushan\Desktop\projectEuler.net\euler\EulerTests\obj\Debug\EulerTests.dll
+C:\Users\wushan\Desktop\projectEuler.net\euler\EulerTests\obj\Debug\EulerTests.pdb

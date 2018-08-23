@@ -8,7 +8,7 @@ using System.Runtime.InteropServices;
 
 namespace Euler
 {
-    internal static class EulerHelperFunctions
+    public static class EulerHelperFunctions
     {
         public static List<int> GetMultiples(int maxNumber, int[] factors)
         {
