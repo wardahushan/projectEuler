@@ -10,7 +10,7 @@ namespace Euler
         static void Main(string[] args)
         {
 
-            // Euler Problem 3
+            // Euler Problem 3 - just a test
             //long number = 600851475143;
             //List<long> factors = EulerHelperFunctions.GetAllFactors(number);
             //List<long> primes = EulerHelperFunctions.GetPrimeNumbers(factors);
