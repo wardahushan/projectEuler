@@ -56,9 +56,10 @@ namespace Euler
         {
             List<long> sequence = new List<long>();
             sequence.Add(1);
+            sequence.Add(1);
             sequence.Add(2);
 
-            int index = 2;
+            int index = 3;
             long nextNumber = sequence[index - 1] + sequence[index - 2];
 
             while (nextNumber <= maxNumber)
@@ -71,9 +72,9 @@ namespace Euler
             return sequence;
         }
 
-        public static long SumEvenNumbers(List<long> fibonacci)
+        public static long SumEvenNumbers(List<long> numbersToSum)
         {
-            return fibonacci.AsEnumerable().Where(x => x % 2 == 0).Sum();
+            return numbersToSum.AsEnumerable().Where(x => x % 2 == 0).Sum();
         }
 
         // TODO: make this more efficient?
@@ -82,25 +83,19 @@ namespace Euler
             List<long> factors = new List<long>();
             long limit = (long)Math.Sqrt(number);
 
-            for (long i = 2; i <= limit; i++)
+            for (long i = 1; i <= limit; i++)
             {
                 if (number % i == 0)
                 {
                     factors.Add(i);
 
-                    if (number % i == i)
+                    if (number % i != i)
                     {
                         factors.Add(number / i);
                     }
                 }
             }
 
-            if (!factors.Contains(1))
-            {
-                factors.Add(1);
-            }
-
-            factors.Add(number);
             return factors;
         }
 
@@ -199,6 +194,25 @@ namespace Euler
             }
 
             return sum;
+        }
+
+        public static List<long> GenerateCollatzSequence(long number)
+        {
+            List<long> collatz = new List<long>();
+            collatz.Add(number);
+
+            while (number > 1)
+            {
+                number = IsEven(number) ? number / 2 : 3 * number + 1;
+                collatz.Add(number);
+            }
+
+            return collatz;
+        }
+
+        public static bool IsEven(long number)
+        {
+            return number % 2 == 0;
         }
 
     }
