@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Data.SqlTypes;
 using System.Linq;
 using System.Linq.Expressions;
+using System.Numerics;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
@@ -194,5 +195,16 @@ namespace Euler
             return number % 2 == 0;
         }
 
+        public static BigInteger Factorial(int n)
+        {
+            BigInteger factorial = 1; 
+            while (n > 0)
+            {
+                factorial = factorial * n;
+                n--;
+            }
+
+            return factorial;
+        }
     }
 }

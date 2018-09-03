@@ -14,6 +14,12 @@ namespace Euler
         {
             // No deployable code
             // Run unit tests to check problem solutions
+
+            string factorialAsString = (EulerHelperFunctions.Factorial(100)).ToString();
+            BigInteger s = EulerHelperFunctions.SumIndividualDigitsInString(factorialAsString);
+
+            Console.WriteLine(s);
+
         }
     }
 }

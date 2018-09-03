@@ -295,10 +295,18 @@ namespace EulerTests
             Assert.AreEqual(numberOfFirstSundays, 171);
         }
 
+        [TestMethod]
+        public void Problem20()
+        {
+            string factorialAsString = ((BigInteger)EulerHelperFunctions.Factorial(100)).ToString();
+            Assert.AreEqual(EulerHelperFunctions.SumIndividualDigitsInString(factorialAsString), 648);
+        }
 
         [TestMethod]
         public void Problem25()
         {
+            // Problem 25
+
             long maxIndex = 1000;
             bool stop = false;
             Dictionary<long, BigInteger> fibonacci = new Dictionary<long, BigInteger>();
