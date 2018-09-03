@@ -1,8 +1,10 @@
 ﻿using Euler;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using ProjectEuler;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Numerics;
 
 namespace EulerTests
 {
@@ -27,8 +29,18 @@ namespace EulerTests
         {
             // Problem 2 solution
             long maxValue = 4000000;
-            List<long> fibonacci = EulerHelperFunctions.CreateFibonacciSequence(maxValue);
-            Assert.AreEqual(EulerHelperFunctions.SumEvenNumbers(fibonacci), 4613732);
+            long maxIndex = 100;
+            bool stop = false;
+            Dictionary<long, BigInteger> fibonacci = new Dictionary<long, BigInteger>();
+
+            while (!stop)
+            {
+                fibonacci = FibonacciHelper.ConstructFibonacciSequenceUptoIndex(maxIndex);
+                stop = fibonacci.Values.Max() >= maxValue;
+                maxIndex += maxIndex;
+            }
+
+            Assert.AreEqual(fibonacci.Values.Where(x => x < maxValue && x % 2 == 0).Aggregate(BigInteger.Add), 4613732);
         }
 
         [TestMethod]
@@ -269,9 +281,22 @@ namespace EulerTests
         }
 
 
-        //[TestMethod]
-        //public void Problem8()
-        //{ }
+        [TestMethod]
+        public void Problem25()
+        {
+            long maxIndex = 1000;
+            bool stop = false;
+            Dictionary<long, BigInteger> fibonacci = new Dictionary<long, BigInteger>();
+
+            while (!stop)
+            {
+                fibonacci = FibonacciHelper.ConstructFibonacciSequenceUptoIndex(maxIndex);
+                stop = fibonacci.Values.Max().ToString().Length >= 1000;
+                maxIndex += maxIndex;
+            }
+
+            Assert.AreEqual(fibonacci.First(x => x.Value.ToString().Length == 1000).Key, 4782);
+        }
 
 
         //[TestMethod]

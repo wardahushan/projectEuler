@@ -4,7 +4,6 @@ C:\Users\wushan\Desktop\ProjectEuler\ProjectEuler\bin\Debug\ProjectEuler.pdb
 C:\Users\wushan\Desktop\ProjectEuler\ProjectEuler\obj\Debug\ProjectEuler.csproj.CoreCompileInputs.cache
 C:\Users\wushan\Desktop\ProjectEuler\ProjectEuler\obj\Debug\ProjectEuler.exe
 C:\Users\wushan\Desktop\ProjectEuler\ProjectEuler\obj\Debug\ProjectEuler.pdb
-C:\Users\wushan\Desktop\ProjectEuler\ProjectEuler\obj\Debug\ProjectEuler.csprojResolveAssemblyReference.cache
 C:\Users\wushan\Desktop\projectEuler.net\euler\ProjectEuler\bin\Debug\ProjectEuler.exe.config
 C:\Users\wushan\Desktop\projectEuler.net\euler\ProjectEuler\bin\Debug\ProjectEuler.exe
 C:\Users\wushan\Desktop\projectEuler.net\euler\ProjectEuler\bin\Debug\ProjectEuler.pdb
@@ -12,3 +11,4 @@ C:\Users\wushan\Desktop\projectEuler.net\euler\ProjectEuler\obj\Debug\ProjectEul
 C:\Users\wushan\Desktop\projectEuler.net\euler\ProjectEuler\obj\Debug\ProjectEuler.csproj.CoreCompileInputs.cache
 C:\Users\wushan\Desktop\projectEuler.net\euler\ProjectEuler\obj\Debug\ProjectEuler.exe
 C:\Users\wushan\Desktop\projectEuler.net\euler\ProjectEuler\obj\Debug\ProjectEuler.pdb
+C:\Users\wushan\Desktop\projectEuler\ProjectEuler\obj\Debug\ProjectEuler.csprojAssemblyReference.cache
