@@ -51,27 +51,6 @@ namespace Euler
             return true;
         }
 
-
-        public static List<long> CreateFibonacciSequence(long maxNumber)
-        {
-            List<long> sequence = new List<long>();
-            sequence.Add(1);
-            sequence.Add(1);
-            sequence.Add(2);
-
-            int index = 3;
-            long nextNumber = sequence[index - 1] + sequence[index - 2];
-
-            while (nextNumber <= maxNumber)
-            {
-                sequence.Add(nextNumber);
-                index++;
-                nextNumber = sequence[index - 1] + sequence[index - 2];
-            }
-
-            return sequence;
-        }
-
         public static long SumEvenNumbers(List<long> numbersToSum)
         {
             return numbersToSum.AsEnumerable().Where(x => x % 2 == 0).Sum();

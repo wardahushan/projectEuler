@@ -1,0 +1,7 @@
+C:\Users\wushan\Desktop\projectEuler\ProjectEuler\bin\x64\Debug\ProjectEuler.exe.config
+C:\Users\wushan\Desktop\projectEuler\ProjectEuler\bin\x64\Debug\ProjectEuler.exe
+C:\Users\wushan\Desktop\projectEuler\ProjectEuler\bin\x64\Debug\ProjectEuler.pdb
+C:\Users\wushan\Desktop\projectEuler\ProjectEuler\obj\x64\Debug\ProjectEuler.csprojAssemblyReference.cache
+C:\Users\wushan\Desktop\projectEuler\ProjectEuler\obj\x64\Debug\ProjectEuler.csproj.CoreCompileInputs.cache
+C:\Users\wushan\Desktop\projectEuler\ProjectEuler\obj\x64\Debug\ProjectEuler.exe
+C:\Users\wushan\Desktop\projectEuler\ProjectEuler\obj\x64\Debug\ProjectEuler.pdb
