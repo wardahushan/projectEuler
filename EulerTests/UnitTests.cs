@@ -3,6 +3,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using ProjectEuler;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Numerics;
 
@@ -227,6 +228,21 @@ namespace EulerTests
         }
 
         [TestMethod]
+        public void Problem13()
+        {
+            string filePath = @"C:\Users\wushan\Desktop\projectEuler\Data\Problem13.txt";
+            string[] lines = File.ReadAllLines(filePath);
+            BigInteger sum = 0;
+
+            foreach (string line in lines)
+            {
+                sum += BigInteger.Parse(line);
+            }
+
+            Assert.AreEqual(sum.ToString().Substring(0, 10), "5537376230");
+        }
+
+        [TestMethod]
         public void Problem14()
         {
             // Problem 14 solution
@@ -248,13 +264,12 @@ namespace EulerTests
             Assert.AreEqual(startNumberForLongestSequence, 837799);
         }
 
-
-        //[TestMethod]
-        //public void Problem16()
-        //{
-        //    string powerAsString = Math.Pow(2, 1000).ToString("0" + new string('#', 339));
-        //    Assert.Equals(EulerHelperFunctions.SumIndividualDigitsInString(powerAsString), );
-        //}
+        [TestMethod]
+        public void Problem16()
+        {
+            string powerAsString = ((BigInteger)Math.Pow(2, 1000)).ToString();
+            Assert.AreEqual(EulerHelperFunctions.SumIndividualDigitsInString(powerAsString), 1366);
+        }
 
         [TestMethod]
         public void Problem19()
