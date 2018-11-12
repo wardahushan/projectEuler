@@ -14,21 +14,15 @@ namespace EulerTests
     {
         [TestMethod]
         public void Problem1()
-        {
-            // Problem 1 example
-            int maxNumber = 10;
+        {            
+            int maxNumber = 1000;
             int[] factors = new int[] { 3, 5 };
-            Assert.AreEqual(EulerHelperFunctions.GetMultiples(maxNumber, factors).Sum(), 23);
-
-            // Problem 1 solution
-            maxNumber = 1000;
             Assert.AreEqual(EulerHelperFunctions.GetMultiples(maxNumber, factors).Sum(), 233168);
         }
 
         [TestMethod]
         public void Problem2()
         {
-            // Problem 2 solution
             long maxValue = 4000000;
             long maxIndex = 100;
             bool stop = false;
@@ -47,9 +41,7 @@ namespace EulerTests
         [TestMethod]
         public void Problem3()
         {
-            // Problem 3 solution
-            long number = 600851475143;
-            List<long> factors = EulerHelperFunctions.GetAllFactors(number);
+            List<long> factors = EulerHelperFunctions.GetAllFactors(600851475143);
             List<long> primes = EulerHelperFunctions.GetPrimeNumbers(factors);
             Assert.AreEqual(primes.Max(), 6857);
         }
@@ -57,7 +49,6 @@ namespace EulerTests
         [TestMethod]
         public void Problem4()
         {
-            // Problem 4 solution
             long minNumber = 100;
             long maxNumber = 999;
             long largestPalindrome = 0;
@@ -79,8 +70,6 @@ namespace EulerTests
         [TestMethod]
         public void Problem5()
         {
-            // Problem 5 solution
-
             long number = 1;
             long[] factors = new long[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 };
             while (!EulerHelperFunctions.IsMultipleOfAllFactor(number, factors))
@@ -89,28 +78,19 @@ namespace EulerTests
             }
 
             Assert.AreEqual(number, 232792560);
-
         }
 
         [TestMethod]
         public void Problem6()
         {
-            // Problem 6 example
-            long sumOfSquares = EulerHelperFunctions.SumOfSquares(10);
-            long squareOfSums = EulerHelperFunctions.SquareOfSums(10);
-            Assert.AreEqual(squareOfSums - sumOfSquares, 2640);
-
-            // Problem 6 solution
-            sumOfSquares = EulerHelperFunctions.SumOfSquares(100);
-            squareOfSums = EulerHelperFunctions.SquareOfSums(100);
+            long sumOfSquares = EulerHelperFunctions.SumOfSquares(100);
+            long squareOfSums = EulerHelperFunctions.SquareOfSums(100);
             Assert.AreEqual(squareOfSums - sumOfSquares, 25164150);
         }
 
         [TestMethod]
         public void Problem7()
         {
-            // Problem 7 solution 
-
             long number = 2;
             long counter = 1;
             long prime = number;
@@ -132,8 +112,6 @@ namespace EulerTests
         [TestMethod]
         public void Problem8()
         {
-            // Problem 8 solution
-
             string thousandDigitNumber =
                 "73167176531330624919225119674426574742355349194934" +
                 "96983520312774506326239578318016984801869478851843" +
@@ -174,8 +152,6 @@ namespace EulerTests
         [TestMethod]
         public void Problem9()
         {
-            // Problem 9 solution
-
             int cMax = 998;
             int product = 0;
 
@@ -201,8 +177,6 @@ namespace EulerTests
         [TestMethod]
         public void Problem10()
         {
-            // Problem 10 solution 
-
             List<long> numbersList = EulerHelperFunctions.CreateListOfNumbers(2000000);
             List<long> primes = EulerHelperFunctions.GetPrimeNumbers(numbersList);
             Assert.AreEqual(primes.Sum(), 142913828922);
@@ -211,8 +185,6 @@ namespace EulerTests
         [TestMethod]
         public void Problem12()
         {
-            // Problem 12 solution
-
             long n = 1;
             long nthTriangularNumber = 1;
             List<long> factors = EulerHelperFunctions.GetAllFactors(nthTriangularNumber);
@@ -230,7 +202,7 @@ namespace EulerTests
         [TestMethod]
         public void Problem13()
         {
-            string filePath = @"C:\Users\wushan\Desktop\projectEuler\Data\Problem13.txt";
+            string filePath = @"C:\Users\wushan\Desktop\GitHub_Repos\projectEuler\Data\Problem13.txt";
             string[] lines = File.ReadAllLines(filePath);
             BigInteger sum = 0;
 
@@ -245,8 +217,6 @@ namespace EulerTests
         [TestMethod]
         public void Problem14()
         {
-            // Problem 14 solution
-
             long startNumberForLongestSequence = 0;
             long maxLength = 1;
 
@@ -274,8 +244,6 @@ namespace EulerTests
         [TestMethod]
         public void Problem19()
         {
-            // Problem 19 solution 
-
             DateTime startDate = new DateTime(1901, 1, 1);
             DateTime endDate = new DateTime(2000, 12, 31);
 
@@ -303,10 +271,18 @@ namespace EulerTests
         }
 
         [TestMethod]
+        public void Problem24()
+        {
+            string numberToPerm = "0123456789";
+            List<string> permutations = new List<string>();
+            EulerHelperFunctions.GetPermutations(numberToPerm.ToCharArray(), numberToPerm.Length, permutations);
+
+            Assert.AreEqual(permutations.OrderBy(x => x).Skip(999999).First(), "2783915460");
+        }
+
+        [TestMethod]
         public void Problem25()
         {
-            // Problem 25
-
             long maxIndex = 1000;
             bool stop = false;
             Dictionary<long, BigInteger> fibonacci = new Dictionary<long, BigInteger>();
@@ -321,14 +297,47 @@ namespace EulerTests
             Assert.AreEqual(fibonacci.First(x => x.Value.ToString().Length == 1000).Key, 4782);
         }
 
+        [TestMethod]
+        public void Problem29()
+        {
+            double start = 2;
+            double end = 100;
+            List<double> myNumbers = new List<double>();
 
-        //[TestMethod]
-        //public void Problem8()
-        //{ }
+            for (double a = start; a <= end; a++)
+            {
+                for (double b = start; b <= end; b++)
+                {
+                    myNumbers.Add(Math.Pow(a, b));
+                }
+            }
 
+            Assert.AreEqual(myNumbers.Distinct().Count(), 9183);
+        }
 
+        [TestMethod]
+        public void Problem41()
+        {
+            string numberToPerm = "1";
+            List<string> permutations = new List<string>();
+            for (int i = 1; i < 9; i++)
+            {
+                int j = i + 1;
+                numberToPerm += j;
+                EulerHelperFunctions.GetPermutations(numberToPerm.ToCharArray(), numberToPerm.Length, permutations);
+            }
 
+            long largestPandigital = 0;
+            foreach (long number in permutations.ConvertAll(x => Int64.Parse(x)).OrderByDescending(x => x))
+            {
+                if (EulerHelperFunctions.IsPrime(number))
+                {
+                    largestPandigital = number;
+                    return;
+                }
+            }
 
-
+            Assert.AreEqual(largestPandigital, 7652413);
+        }
     }
 }
