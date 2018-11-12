@@ -1,11 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data.SqlTypes;
 using System.Linq;
-using System.Linq.Expressions;
 using System.Numerics;
-using System.Runtime.CompilerServices;
-using System.Runtime.InteropServices;
 
 namespace Euler
 {
@@ -95,6 +91,7 @@ namespace Euler
             return primes;
         }
 
+
         public static bool IsPrime(long number)
         {
             return (number != 1 && GetAllFactors(number).Count == 2);
@@ -103,6 +100,7 @@ namespace Euler
         public static bool IsPalindrome(string text)
         {
             int halfwayPoint = text.Length / 2;
+
             string firstHalf = text.Substring(0, halfwayPoint);
             halfwayPoint += text.Length % 2 != 0 ? 1 : 0;
             string secondHalf = text.Substring(halfwayPoint);
@@ -170,7 +168,7 @@ namespace Euler
             foreach (char number in extractedNumber)
             {
                 bool addNumber = Int64.TryParse(number.ToString(), out long numberToAdd);
-                sum += addNumber ? Int64.Parse(number.ToString()) : 0;
+                sum += numberToAdd;
             }
 
             return sum;
@@ -197,7 +195,7 @@ namespace Euler
 
         public static BigInteger Factorial(int n)
         {
-            BigInteger factorial = 1; 
+            BigInteger factorial = 1;
             while (n > 0)
             {
                 factorial = factorial * n;
@@ -205,6 +203,61 @@ namespace Euler
             }
 
             return factorial;
+        }
+
+        public static bool IsPandigital(long number)
+        {
+            string numberAsString = number.ToString();
+
+            for (int i = 1; i <= numberAsString.Length; i++)
+            {
+                if (!numberAsString.Contains(i.ToString()))
+                {
+                    return false;
+                }
+            }
+
+            return true;
+        }
+
+        //TODO: add a function to generate all pandigitals given n
+
+
+
+        public static List<string> GetPermutations(char[] charArray, long n, List<string> permutations)
+        {
+            if (n == 1)
+            {
+                permutations.Add(new string(charArray));
+            }
+            else
+            {
+                for (int i = 0; i < n - 1; i++)
+                {
+                    GetPermutations(charArray, n - 1, permutations);
+
+                    if (IsEven(n))
+                    {
+                        charArray = SwapStringCharacters(charArray, i, n - 1);
+                    }
+                    else
+                    {
+                        charArray = SwapStringCharacters(charArray, 0, n - 1);
+                    }
+                }
+
+                GetPermutations(charArray, n-1, permutations);
+            }
+
+            return permutations;
+        }
+
+        private static char[] SwapStringCharacters(char[] charArrayIn, long i, long j)
+        {
+            char temp = charArrayIn[i];
+            charArrayIn[i] = charArrayIn[j];
+            charArrayIn[j] = temp;
+            return charArrayIn;
         }
     }
 }

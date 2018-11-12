@@ -305,8 +305,6 @@ namespace EulerTests
         [TestMethod]
         public void Problem25()
         {
-            // Problem 25
-
             long maxIndex = 1000;
             bool stop = false;
             Dictionary<long, BigInteger> fibonacci = new Dictionary<long, BigInteger>();
@@ -321,14 +319,22 @@ namespace EulerTests
             Assert.AreEqual(fibonacci.First(x => x.Value.ToString().Length == 1000).Key, 4782);
         }
 
+        [TestMethod]
+        public void Problem29()
+        {
+            double start = 2;
+            double end = 100;
+            List<double> myNumbers = new List<double>();
 
-        //[TestMethod]
-        //public void Problem8()
-        //{ }
+            for (double a = start; a <= end; a++)
+            {
+                for (double b = start; b <= end; b++)
+                {
+                    myNumbers.Add(Math.Pow(a, b));
+                }
+            }
 
-
-
-
-
+            Assert.AreEqual(myNumbers.Distinct().Count(), 9183);
+        }
     }
 }
