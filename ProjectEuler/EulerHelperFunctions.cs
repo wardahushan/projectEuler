@@ -220,10 +220,6 @@ namespace Euler
             return true;
         }
 
-        //TODO: add a function to generate all pandigitals given n
-
-
-
         public static List<string> GetPermutations(char[] charArray, long n, List<string> permutations)
         {
             if (n == 1)
