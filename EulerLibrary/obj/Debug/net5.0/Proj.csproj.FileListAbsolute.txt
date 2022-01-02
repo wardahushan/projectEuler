@@ -1,0 +1,15 @@
+/Users/wardahushan/Documents/Programming/projectEuler/Proj/bin/Debug/net5.0/Proj.deps.json
+/Users/wardahushan/Documents/Programming/projectEuler/Proj/bin/Debug/net5.0/Proj.runtimeconfig.json
+/Users/wardahushan/Documents/Programming/projectEuler/Proj/bin/Debug/net5.0/Proj.runtimeconfig.dev.json
+/Users/wardahushan/Documents/Programming/projectEuler/Proj/bin/Debug/net5.0/Proj.dll
+/Users/wardahushan/Documents/Programming/projectEuler/Proj/bin/Debug/net5.0/ref/Proj.dll
+/Users/wardahushan/Documents/Programming/projectEuler/Proj/bin/Debug/net5.0/Proj.pdb
+/Users/wardahushan/Documents/Programming/projectEuler/Proj/obj/Debug/net5.0/Proj.csproj.AssemblyReference.cache
+/Users/wardahushan/Documents/Programming/projectEuler/Proj/obj/Debug/net5.0/Proj.GeneratedMSBuildEditorConfig.editorconfig
+/Users/wardahushan/Documents/Programming/projectEuler/Proj/obj/Debug/net5.0/Proj.AssemblyInfoInputs.cache
+/Users/wardahushan/Documents/Programming/projectEuler/Proj/obj/Debug/net5.0/Proj.AssemblyInfo.cs
+/Users/wardahushan/Documents/Programming/projectEuler/Proj/obj/Debug/net5.0/Proj.csproj.CoreCompileInputs.cache
+/Users/wardahushan/Documents/Programming/projectEuler/Proj/obj/Debug/net5.0/Proj.dll
+/Users/wardahushan/Documents/Programming/projectEuler/Proj/obj/Debug/net5.0/ref/Proj.dll
+/Users/wardahushan/Documents/Programming/projectEuler/Proj/obj/Debug/net5.0/Proj.pdb
+/Users/wardahushan/Documents/Programming/projectEuler/Proj/obj/Debug/net5.0/Proj.genruntimeconfig.cache
